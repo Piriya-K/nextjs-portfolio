@@ -32,12 +32,21 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              Welcome{" "}
+          <span className="sm:flex">
+            <span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                {" "}
+                Welcome{" "}
+              </span>
+              to my portfolio website
             </span>
-            to my portfolio website
+            {/* <Image
+              src="/profilepic.jpeg"
+              alt="profile picture"
+              width={200}
+              height={200}
+              className="hidden sm:block rounded-full"
+            /> */}
           </span>
         </motion.div>
 
@@ -45,9 +54,12 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Hello, my name is <strong>Piriya</strong>! I&apos;m an aspiring Full
-          Stack Software Developer with experience in Website and Software
-          development. Check out my projects and skills below!
+          Hello, my name is <strong>Piriya</strong>! I&apos;m an aspiring <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Full
+          Stack Software Developer</span> with professional experience in{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            Digital Marketing
+          </span>
+          . Check out my projects and skills below!
         </motion.p>
       </div>
 
